@@ -45,12 +45,13 @@
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:webadmin@hippoclin.com">webadmin@hippoclin.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 502-432-2297</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="https://www.facebook.com/profile.php?id=61563076832260" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-          <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
-          <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+          <a href="https://www.linkedin.com/in/vanessa-williams-harvey/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/playlist?list=PLTavXyRALCAyS_iWMcDZsJTY-L02A_r1z" class="youtube"><i class="bi bi-youtube"></i></a>
+         
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -87,13 +88,15 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="hero-img">
 
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>Welcome to HippoCLIN</h2>
-          <p>HippoCLIN was developed to fill a widening<br />practical education gap the clinical education sector.</p>
+          <div class="m-2"><h2>Welcome!</h2></div>
+          <div class=""><img src="assets/img/hippoCLIN-profile-pic-transparent-50.png" height="150" /></div>
+          <br />
+          <div class=""><p>HippoCLIN is designed to fill a widening educational gap<br /> in the clinical healthcare education industry.</p></div>
         </div><!-- End Welcome -->
 
         <div class="content row gy-4">
@@ -171,7 +174,7 @@
                 </div>
               </li>
               <li>
-                <i class="fa-solid fa-pump-medical"></i>
+                <i class="fa-solid fa-sun"></i>
                 <div>
                   <h5>Visionary</h5>
                   <p>Vanessa sees the value in preparing our future leaders and caregivers by providing them with the technological, developmental, and educational tools and experiences to catapult their clinical learning experience.</p>
@@ -186,7 +189,8 @@
               </li>
             </ul>
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="203" height="136" src="/assets/img/signature-1.png?time=1730168081" class="attachment-large size-large wp-image-1035" alt="" sizes="(max-width: 406px) 100vw, 406px">													</div>
+              <img width="203" height="136" src="assets/img/signature-1.png" alt="" />
+            </div>
           </div>
 
         </div>
@@ -266,45 +270,65 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
-                <i class="fas fa-heartbeat"></i>
+                <i class="fa-solid fa-money-check-dollar"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Try HippoCLIN for FREE today!</h3>
-              </a>
+              <h3>Try for FREE!</h3>
               <ul class="list-group">
                 <li class="list-group-item">24/7 access to everyone anytime!</li>
                 <li class="list-group-item">Free Trial (7 Days)</li>
                 <li class="list-group-item">Unlimited Patients</li>
+                <li class="list-group-item">
+                  <a href="https://app.hippoclin.com/session/signup" class="btn btn-primary pill-btn"><span>START YOUR FREE TRIAL</span> <i class="bi bi-chevron-right"></i></a>
+                </li>
               </ul>
-              <div class="list-group">
-                <a href="https://app.hippoclin.com/session/signup" class="list-group-item list-group-item-action active" target="_blank">START YOUR FREE TRIAL</a>
-              </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fas fa-pills"></i>
+                <i class="fas fa-play-circle"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Watch Now</h3>
-              </a>
-              <div class="vp-preview vp-preview-invisible" id="vp-preview" data-thumb="https://i.vimeocdn.com/video/1552778884-2755e4e0d8985a70c572ca93fadb78c46165ad206fe5d1cebca6a20e99627bb1-d?mw=700&amp;mh=394" data-thumb-width="700"></div>
-              
+              <h3>Watch Now</h3>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  How does it work?
+                </li>
+                <li class="list-group-item">
+                  What are the features?
+                </li>
+                <li class="list-group-item">
+                  Who can use it?
+                </li>
+                <li class="list-group-item">
+                  <button id="vimeoVideoButton" type="button" data-bs-toggle="modal" data-bs-target="#vimeoVideoModal" class="btn btn-primary pill-btn">
+                    <span>PLAY EXPLAINER VIDEO</span> <i class="bi bi-chevron-right"></i>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fas fa-hospital-user"></i>
+                <i class="fas fa-calendar"></i>
               </div>
-              
-              <a href="#" class="stretched-link">
-                <h3>Independents</h3>
-              </a>
-              <p>Because you matter, your education matters, your training matters, and your best interests matter, and you matter</p>
+              <h3>Schedule a Demo</h3>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  See how the app works
+                </li>
+                <li class="list-group-item">
+                  Got a list of questions?
+                </li>
+                <li class="list-group-item">
+                  Set up a time that works for you.
+                </li>
+                <li class="list-group-item">
+                  <a href="#" data-tf-popup="h8COTvCD" class="btn btn-primary pill-btn"><span>SCHEDULE DEMO</span> <i class="bi bi-chevron-right"></i></a>
+                </li>
+              </ul>
             </div>
           </div><!-- End Service Item -->
 
@@ -976,7 +1000,6 @@
             </a>
             <a href="https://www.youtube.com/playlist?list=PLTavXyRALCAyS_iWMcDZsJTY-L02A_r1z"><i class="bi bi-youtube"></i></a>
             <a href="https://www.linkedin.com/in/vanessa-williams-harvey/"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61563076832260"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 
@@ -985,8 +1008,8 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#about">About us</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="https://app.hippoclin.com/assets/docs/Terms_of_Service.pdf" target="_blank">Terms of service</a></li>
+            <li><a href="https://app.hippoclin.com/assets/docs/Privacy_Policy.pdf" target="_blank">Privacy policy</a></li>
           </ul>
         </div>
 
@@ -1002,9 +1025,9 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>News and Notes</h4>
           <ul>
-            <li><a href="#">Raises First Round of Funding</a></li>
+            <!-- <li><a href="#">Raises First Round of Funding</a></li>
             <li><a href="#">HippoCLIN Launches</a></li>
-            <li><a href="#">New! Clinical Students</a></li>
+            <li><a href="#">New! Clinical Students</a></li> -->
           </ul>
         </div>
 
@@ -1028,6 +1051,20 @@
 
   </footer>
 
+  <!--- Video Modal -->
+  <div class="modal fade" id="vimeoVideoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div data-vimeo-id="773826021" data-vimeo-width="640" id="explainerVideo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -1042,8 +1079,21 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Vimeo Player -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const videoButton = document.getElementById("vimeoVideoButton");
+    videoButton.addEventListener("click", () => {
+      // show modal
+      console.log("btn click")
+      $('#vimeoVideoModal').modal('toggle');
+      // play video
+    });
+  </script>
 
 </body>
 
